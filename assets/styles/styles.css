@@ -2,4 +2,22 @@
 
 body {
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  justify-content: space-between;
+  display: flex;
+  flex-shrink: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #1F2937;
 }
