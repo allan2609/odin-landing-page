@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px;
+  margin: 0;
 }
 
 a {
@@ -16,7 +16,6 @@ a {
 .header {
   justify-content: space-between;
   display: flex;
-  flex-shrink: 0;
   padding: 10px;
   width: 100%;
   background-color: #1F2937;
@@ -35,4 +34,41 @@ a {
 .right-links > * {
   font-size: 18px;
   color: #E5E7EB;
+}
+
+.hero {
+  display: flex;
+  background-color: #1F2937;
+  align-items: center;
+}
+
+.left-hero, .right-hero {
+  display: flex;
+  flex: 1 1 50%;
+}
+
+.left-hero {
+  flex-direction: column;
+  background-color: #1F2937;
+}
+
+.right-hero {
+  color: white;
+  background-color: darkgrey;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.left-hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F9FAF8;
+  margin: 0px;
+}
+
+.left-hero p {
+  font-size: 18px;
+  color: #E5E7EB;
+  margin: 0px;
 }
