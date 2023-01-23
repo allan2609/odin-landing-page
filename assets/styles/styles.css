@@ -4,7 +4,7 @@ body {
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
 }
@@ -40,6 +40,8 @@ a {
   display: flex;
   background-color: #1F2937;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .left-hero, .right-hero {
@@ -50,6 +52,8 @@ a {
 .left-hero {
   flex-direction: column;
   background-color: #1F2937;
+  justify-content: space-between; /* Why doesn't this work? */
+  gap: 16px;
 }
 
 .right-hero {
@@ -57,7 +61,7 @@ a {
   background-color: darkgrey;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  height: 250px;
 }
 
 .left-hero h1 {
@@ -71,4 +75,28 @@ a {
   font-size: 18px;
   color: #E5E7EB;
   margin: 0px;
+}
+
+.container, .footer {
+  width: 100%;
+}
+
+.hero-button {
+  background-color: #3882f6;
+  border: 1px solid #3882f6;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #E5E7EB;
+  padding: 8px 32px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  flex: 1;
 }
