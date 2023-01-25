@@ -132,3 +132,21 @@ a {
   flex 0 1 auto;
   color: darkgrey;
 }
+
+.testimonial {
+  background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  font-size: 36px;
+  padding: 1em 4em;
+  gap: 16px;
+}
+
+.signature {
+  display: flex;
+  justify-content: end;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+}
