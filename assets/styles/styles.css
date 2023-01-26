@@ -189,3 +189,14 @@ a {
   padding: 8px 32px;
   min-width: 150px;
 }
+
+.footer {
+  display: flex;
+  flex: 1;
+  background-color: #1F2937;
+  color: #E5E7EB;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 100px;
+}
