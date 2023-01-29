@@ -20,6 +20,12 @@ a {
   gap: 100px;
 }
 
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .left-links, .right-links {
   display: flex;
   gap: 24px;
