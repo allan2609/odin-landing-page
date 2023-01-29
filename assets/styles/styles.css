@@ -61,12 +61,13 @@ a {
   gap: 16px;
 }
 
+.main-photo {
+  max-width: 500px;
+  height: auto;
+}
+
 .right-hero {
-  color: white;
-  background-color: darkgrey;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
+  justify-content: right;
 }
 
 .left-hero h1 {
