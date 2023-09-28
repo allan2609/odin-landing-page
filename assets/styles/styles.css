@@ -19,7 +19,6 @@ a {
   padding-right: max(16px, 10vw);
   padding-top: max(8px, 2vh);
   padding-bottom: max(8px, 4vh);
-  margin-bottom: -1.25rem; /* Why is there white space without it? */
   background-color: #1F2937;
   width: max(400px, 80vw);
 }
@@ -31,8 +30,6 @@ a {
   width: max(400px, 80vw);
   padding-left: max(16px, 10vw);
   padding-right: max(16px, 10vw);
-  padding-top: max(8px, 2vh);
-  padding-bottom: max(8px, 2vh);
   align-items: center;
 }
 
@@ -296,7 +293,6 @@ a {
   justify-content: center;
   align-items: center;
   padding: 24px;
-  margin-top: -1rem; /* Why is there white space without it?*/
 }
 
 .footer-link, .footer-link:visited {
