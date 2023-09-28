@@ -15,20 +15,30 @@ a {
 .header {
   justify-content: space-between;
   display: flex;
-  padding: 16px 96px;
+  padding-left: max(16px, 10vw);
+  padding-right: max(16px, 10vw);
+  padding-top: max(8px, 2vh);
+  padding-bottom: max(8px, 4vh);
+  margin-bottom: -16px; /* Why is there white space without it? */
   background-color: #1F2937;
-  gap: 100px;
+  width: max(400px, 80vw);
 }
 
 .container {
   display: flex;
   flex: 1;
   flex-direction: column;
+  width: max(400px, 80vw);
+  padding-left: max(16px, 10vw);
+  padding-right: max(16px, 10vw);
+  padding-top: max(8px, 2vh);
+  padding-bottom: max(8px, 2vh);
+  align-items: center;
 }
 
 .left-links, .right-links {
   display: flex;
-  gap: 24px;
+  gap: 4vmin;
 }
 
 .left-links a {
@@ -42,29 +52,60 @@ a {
 }
 
 .hero {
-  display: flex;
+  /*display: flex;*/
   background-color: #1F2937;
   align-items: center;
-  padding: 10vmin;
+  width: max(400px, 80vw);
+  padding-left: max(16px, 10vw);
+  padding-right: max(16px, 10vw);
+  padding-top: max(8px, 4vh);
+  padding-bottom: max(8px, 6vh);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    display: block;
+  }
+}
+
+@media (min-width: 721px) {
+  .hero {
+    display: flex;
+  }
 }
 
 .left-hero, .right-hero {
   display: flex;
   flex: 1 1 50%;
+  width: clamp(45ch, 50%, 75ch);
+}
+
+@media (max-width: 720px) {
+  .left-hero, .right-hero {
+    align-items: center;
+    margin-bottom: 32px;
+    width: max(400px, 80vw);
+    gap: 32px;
+  }
+}
+
+@media (min-width: 721px) {
+  .left-hero, .right-hero {
+    display: flex;
+    margin-bottom: 0px;
+    gap: 16px;
+  }
 }
 
 .left-hero {
   flex-direction: column;
   background-color: #1F2937;
-  justify-content: space-between; /* Why doesn't this work? */
   padding-right: 24px;
-  gap: 16px;
 }
 
 .main-photo {
-  max-width: calc(100% + 50px);
-  height: auto;
   border-radius: 6px;
+  width: max(300px, 100%);
 }
 
 .right-hero {
@@ -85,12 +126,15 @@ a {
 }
 
 .hero-button {
+  display: flex;
   background-color: #3882f6;
   border: 1px solid #3882f6;
   border-radius: 6px;
   font-size: 18px;
   color: #E5E7EB;
   padding: 8px 32px;
+  width: 80px;
+  justify-content: center;
 }
 
 .information {
@@ -98,8 +142,10 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 96px;
   gap: 24px;
+  width: max(400px, 80vw);
+  padding-top: max(8px, 4vh);
+  padding-bottom: max(8px, 4vh);
 }
 
 .title {
@@ -142,8 +188,12 @@ a {
   display: flex;
   flex-direction: column;
   font-style: italic;
-  font-size: 36px;
-  padding: 10vmin;
+  font-size: clamp(4vmin, 36px, 12vmin);
+  width: max(400px, 80vw);
+  padding-left: max(16px, 10vw);
+  padding-right: max(16px, 10vw);
+  padding-top: max(8px, 4vh);
+  padding-bottom: max(8px, 4vh);
   gap: 16px;
 }
 
@@ -152,18 +202,32 @@ a {
   justify-content: end;
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
+  font-size: clamp(4vmin, 30px, 12vmin);
 }
 
-.call-to-action {
-  display: flex;
-  background-color: #3882f6;
-  color: #E5E7EB;
-  margin: 6vmin;
-  padding: 10vmin;
-  gap: 10px;
-  justify-content: space-evenly;
-  border-radius: 6px;
+@media (max-width: 720px) {
+  .call-to-action {
+    display: flex;
+    flex-direction: column;
+    background-color: #3882f6;
+    color: #E5E7EB;
+    margin: 6vmin 0vmin;
+    padding: 2vmin;
+    border-radius: 6px;
+  }
+}
+
+@media (min-width: 721px) {
+  .call-to-action {
+    display: flex;
+    background-color: #3882f6;
+    color: #E5E7EB;
+    margin: 6vmin;
+    padding: 10vmin;
+    gap: 24px;
+    justify-content: space-evenly;
+    border-radius: 6px;
+  }
 }
 
 .cta-left {
@@ -184,6 +248,27 @@ a {
   align-items: center;
 }
 
+@media (max-width: 720px) {
+  .cta-left, .cta-title {
+    margin-top: 3vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+
+@media (min-width: 721px) {
+  .cta-left, .cta-title {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 720px) {
+  .cta-right {
+    margin-top: -12px;
+    margin-bottom: -12px;
+  }
+}
+
 .cta-button {
   background-color: #3882f6;
   border: 1px solid #F9FAF8;
@@ -201,5 +286,10 @@ a {
   font-size: 18px;
   justify-content: center;
   align-items: center;
-  padding: 28px 100px;
+  padding: 24px;
+  margin-top: -12px; /* Why is there white space without it?*/
+}
+
+.footer-link, .footer-link:visited {
+  color: #E5E7EB;
 }
