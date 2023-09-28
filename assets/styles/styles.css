@@ -19,7 +19,7 @@ a {
   padding-right: max(16px, 10vw);
   padding-top: max(8px, 2vh);
   padding-bottom: max(8px, 4vh);
-  margin-bottom: -16px; /* Why is there white space without it? */
+  margin-bottom: -1.25rem; /* Why is there white space without it? */
   background-color: #1F2937;
   width: max(400px, 80vw);
 }
@@ -52,7 +52,6 @@ a {
 }
 
 .hero {
-  /*display: flex;*/
   background-color: #1F2937;
   align-items: center;
   width: max(400px, 80vw);
@@ -62,13 +61,13 @@ a {
   padding-bottom: max(8px, 6vh);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .hero {
     display: block;
   }
 }
 
-@media (min-width: 721px) {
+@media (min-width: 801px) {
   .hero {
     display: flex;
   }
@@ -80,7 +79,7 @@ a {
   width: clamp(45ch, 50%, 75ch);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .left-hero, .right-hero {
     align-items: center;
     margin-bottom: 32px;
@@ -89,7 +88,7 @@ a {
   }
 }
 
-@media (min-width: 721px) {
+@media (min-width: 801px) {
   .left-hero, .right-hero {
     display: flex;
     margin-bottom: 0px;
@@ -135,6 +134,10 @@ a {
   padding: 8px 32px;
   width: 80px;
   justify-content: center;
+}
+
+.hero-button:hover {
+  background-color: #6ea1db;
 }
 
 .information {
@@ -205,7 +208,7 @@ a {
   font-size: clamp(4vmin, 30px, 12vmin);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .call-to-action {
     display: flex;
     flex-direction: column;
@@ -217,7 +220,7 @@ a {
   }
 }
 
-@media (min-width: 721px) {
+@media (min-width: 801px) {
   .call-to-action {
     display: flex;
     background-color: #3882f6;
@@ -248,7 +251,7 @@ a {
   align-items: center;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .cta-left, .cta-title {
     margin-top: 3vh;
     margin-left: 2vw;
@@ -256,13 +259,13 @@ a {
   }
 }
 
-@media (min-width: 721px) {
+@media (min-width: 801px) {
   .cta-left, .cta-title {
     margin-top: 0px;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .cta-right {
     margin-top: -12px;
     margin-bottom: -12px;
@@ -270,6 +273,7 @@ a {
 }
 
 .cta-button {
+  display: flex;
   background-color: #3882f6;
   border: 1px solid #F9FAF8;
   border-radius: 6px;
@@ -277,6 +281,11 @@ a {
   color: #F9FAF8;
   padding: 8px 32px;
   min-width: 150px;
+  justify-content: center;
+}
+
+.cta-button:hover {
+  background-color: #6ea1db;
 }
 
 .footer {
@@ -287,7 +296,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 24px;
-  margin-top: -12px; /* Why is there white space without it?*/
+  margin-top: -1rem; /* Why is there white space without it?*/
 }
 
 .footer-link, .footer-link:visited {
