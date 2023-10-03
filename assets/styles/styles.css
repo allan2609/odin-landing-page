@@ -60,13 +60,18 @@ a {
 
 @media (max-width: 800px) {
   .hero {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
 }
 
 @media (min-width: 801px) {
   .hero {
     display: flex;
+  }
+  .left-hero {
+    padding-right: 24px;
   }
 }
 
@@ -96,7 +101,6 @@ a {
 .left-hero {
   flex-direction: column;
   background-color: #1F2937;
-  padding-right: 24px;
 }
 
 .main-photo {
