@@ -58,7 +58,7 @@ a {
   height: 100%;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 540px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@ a {
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 540px) {
   .hero {
     display: flex;
     padding-bottom: max(8px, 6vh);
