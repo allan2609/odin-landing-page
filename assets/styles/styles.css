@@ -15,21 +15,21 @@ a {
 .header {
   justify-content: space-between;
   display: flex;
-  padding-left: max(16px, 10vw);
-  padding-right: max(16px, 10vw);
-  padding-top: max(8px, 2vh);
-  padding-bottom: max(8px, 4vh);
+  padding-left: max(1rem, 10vw);
+  padding-right: max(1rem, 10vw);
+  padding-top: max(0.5rem, 2vh);
+  padding-bottom: max(0.5rem, 4vh);
   background-color: #1F2937;
-  width: max(400px, 80vw);
+  width: max(25rem, 80vw);
 }
 
 .container {
   display: flex;
   flex: 1;
   flex-direction: column;
-  width: max(400px, 80vw);
-  padding-left: max(16px, 10vw);
-  padding-right: max(16px, 10vw);
+  width: max(25rem, 80vw);
+  padding-left: max(1rem, 10vw);
+  padding-right: max(1rem, 10vw);
   align-items: center;
 }
 
@@ -38,23 +38,29 @@ a {
   gap: 4vmin;
 }
 
+.right-links a {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+
 .left-links a {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #F9FAF8;
 }
 
 .right-links a {
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #E5E7EB;
 }
 
 .hero {
   background-color: #1F2937;
   align-items: center;
-  width: max(400px, 80vw);
-  padding-left: max(16px, 10vw);
-  padding-right: max(16px, 10vw);
-  padding-top: max(8px, 4vh);
+  width: max(25rem, 80vw);
+  padding-left: max(1rem, 10vw);
+  padding-right: max(1rem, 10vw);
+  padding-top: max(0.5rem, 4vh);
   height: 100%;
 }
 
@@ -63,27 +69,27 @@ a {
 }
 
 .left-hero h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 800;
   color: #F9FAF8;
-  margin: 0px;
+  margin: 0;
 }
 
 .left-hero p {
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #E5E7EB;
-  margin: 0px;
+  margin: 0;
 }
 
 .hero-button {
   display: flex;
   background-color: #3882f6;
   border: 1px solid #3882f6;
-  border-radius: 6px;
-  font-size: 18px;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
   color: #E5E7EB;
-  padding: 8px 32px;
-  width: 80px;
+  padding: 0.5rem 2rem;
+  width: 5rem;
   justify-content: center;
 }
 
@@ -97,14 +103,15 @@ a {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  width: max(400px, 80vw);
-  padding-top: max(8px, 4vh);
-  padding-bottom: max(8px, 4vh);
+  width: max(25rem, 80vw);
+  padding-top: max(0.5rem, 4vh);
+  padding-bottom: max(0.5rem, 4vh);
 }
 
 .title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 800;
+  text-align: center;
 }
 
 .items {
@@ -115,25 +122,25 @@ a {
 .illustration {
   display: flex;
   flex-direction: column;
-  flex: 1 1 calc(25% - 20px);
+  flex: 1 1 calc(25% - 1.25rem);
   justify-content: center;
   align-items: center;
 }
 
 .image {
   display: flex;
-  width: 160px;
-  height: 160px;
+  width: 10rem;
+  height: 10rem;
   border: 2px solid #3882f6;
-  border-radius: 10px;
+  border-radius: 0.6rem;
 }
 
 .description {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  width: 160px;
-  padding: 16px 40px;
+  width: 10rem;
+  padding: 1rem 2.5rem;
   color: darkgrey;
 }
 
@@ -142,13 +149,13 @@ a {
   display: flex;
   flex-direction: column;
   font-style: italic;
-  font-size: clamp(4vmin, 36px, 12vmin);
-  width: max(400px, 80vw);
-  padding-left: max(16px, 10vw);
-  padding-right: max(16px, 10vw);
-  padding-top: max(8px, 4vh);
-  padding-bottom: max(8px, 4vh);
-  gap: 16px;
+  font-size: clamp(4vmin, 2.25rem, 12vmin);
+  width: max(25rem, 80vw);
+  padding-left: max(1rem, 10vw);
+  padding-right: max(1rem, 10vw);
+  padding-top: max(1rem, 6vh);
+  padding-bottom: max(1rem, 6vh);
+  gap: 1rem;
 }
 
 .signature {
@@ -156,25 +163,25 @@ a {
   justify-content: end;
   font-style: normal;
   font-weight: 800;
-  font-size: clamp(4vmin, 30px, 12vmin);
+  font-size: 1.8rem;
 }
 
 .cta-left {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
 }
 
 .cta-title {
   color: #F9FAF8;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .cta-right {
   display: flex;
-  flex: 0 0 120px;
+  flex: 0 0 7.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -183,11 +190,11 @@ a {
   display: flex;
   background-color: #3882f6;
   border: 1px solid #F9FAF8;
-  border-radius: 6px;
-  font-size: 18px;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
   color: #F9FAF8;
-  padding: 8px 32px;
-  min-width: 150px;
+  padding: 0.5rem 2rem;
+  min-width: 9rem;
   justify-content: center;
 }
 
@@ -199,10 +206,10 @@ a {
   display: flex;
   background-color: #1F2937;
   color: #E5E7EB;
-  font-size: 18px;
+  font-size: 1.1rem;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 0.75rem;
 }
 
 .footer-link, .footer-link:visited {
@@ -214,19 +221,22 @@ a {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .left-hero {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+  }
+  .left-hero h1 {
+    text-align: center;
   }
   .left-hero, .right-hero {
     display: flex;
     flex: 1;
     align-items: center;
-    width: max(400px, 80vw);
+    width: max(25rem, 80vw);
     gap: 4vh;
   }
   .call-to-action {
@@ -236,16 +246,12 @@ a {
     color: #E5E7EB;
     margin: 6vh 0vmin;
     padding: 2vh 4vw;
-    border-radius: 6px;
+    border-radius: 0.4rem;
   }
   .cta-left, .cta-title {
     margin-top: 3vh;
     margin-left: 2vw;
     margin-right: 2vw;
-  }
-  .cta-right {
-    margin-top: -12px;
-    margin-bottom: -12px;
   }
   .main-photo {
     width: 100%;
@@ -255,10 +261,10 @@ a {
 @media (min-width: 680px) {
   .hero {
     display: flex;
-    padding-bottom: max(8px, 6vh);
+    padding-bottom: max(0.5rem, 6vh);
   }
   .left-hero {
-    padding-right: 24px;
+    padding-right: 1.5rem;
     flex-direction: column;
     background-color: #1F2937;
     min-height: 100%;
@@ -266,7 +272,7 @@ a {
   .left-hero, .right-hero {
     display: flex;
     flex: 1;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     gap: 2vw;
     height: 100%;
   }
@@ -275,16 +281,16 @@ a {
     background-color: #3882f6;
     color: #E5E7EB;
     margin: 6vmin;
-    padding: 4vh 8vw;
-    gap: 24px;
+    padding: 3rem;
+    gap: 1.5rem;
     justify-content: space-evenly;
-    border-radius: 6px;
+    border-radius: 0.4rem;
   }
   .cta-left, .cta-title {
-    margin-top: 0px;
+    margin-top: 0;
   }
   .main-photo {
-    border-radius: 6px;
-    width: max(300px, 100%);
+    border-radius: 0.4rem;
+    width: max(9rem, 100%);
   }
 }
