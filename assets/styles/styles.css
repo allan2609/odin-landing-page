@@ -149,7 +149,7 @@ a {
   display: flex;
   flex-direction: column;
   font-style: italic;
-  font-size: clamp(4vmin, 2.25rem, 12vmin);
+  font-size: 1.7rem;
   width: max(25rem, 80vw);
   padding-left: max(1rem, 10vw);
   padding-right: max(1rem, 10vw);
@@ -163,7 +163,7 @@ a {
   justify-content: end;
   font-style: normal;
   font-weight: 800;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .cta-left {
