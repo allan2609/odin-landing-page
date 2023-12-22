@@ -38,18 +38,16 @@ a {
   gap: 4vmin;
 }
 
-.right-links a {
-  display: flex;
-  justify-content: end;
-  text-align: end;
-}
-
 .left-links a {
   font-size: 1.5rem;
   color: #F9FAF8;
 }
 
 .right-links a {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: end;
   font-size: 1.1rem;
   color: #E5E7EB;
 }
@@ -123,7 +121,7 @@ a {
   display: flex;
   flex-direction: column;
   flex: 1 1 calc(25% - 1.25rem);
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -131,8 +129,28 @@ a {
   display: flex;
   width: 10rem;
   height: 10rem;
-  border: 2px solid #3882f6;
+  border: 0.25rem solid #3882f6;
   border-radius: 0.6rem;
+}
+
+.illustration:nth-child(1) .image {
+  background: url("../images/etch-a-sketch.svg");
+  background-size: contain;
+}
+
+.illustration:nth-child(2) .image {
+  background: url("../images/calculator.jpg");
+  background-size: contain;
+}
+
+.illustration:nth-child(3) .image {
+  background: url("../images/rock-paper-scissors.jpg");
+  background-size: contain;
+}
+
+.illustration:nth-child(4) .image {
+  background: url("../images/guess-the-number.jpg");
+  background-size: contain;
 }
 
 .description {
@@ -210,7 +228,6 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0.75rem;
-  min-width: 100vw;
 }
 
 .footer-link, .footer-link:visited {
@@ -291,7 +308,6 @@ a {
     margin-top: 0;
   }
   .main-photo {
-    border-radius: 0.4rem;
-    width: max(9rem, 100%);
+    width: 100%;
   }
 }
