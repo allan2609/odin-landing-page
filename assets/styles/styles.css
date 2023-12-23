@@ -12,34 +12,40 @@ a {
   text-decoration: none;
 }
 
+.top-background {
+  display: flex;
+  flex-direction: column;
+  background-color: #1F2937;
+  width: 100%;
+  align-items: center;
+}
+
 .header {
   justify-content: space-between;
   display: flex;
-  padding-left: max(1rem, 10vw);
-  padding-right: max(1rem, 10vw);
-  padding-top: max(0.5rem, 2vh);
-  padding-bottom: max(0.5rem, 4vh);
-  background-color: #1F2937;
-  width: max(25rem, 80vw);
+  width: min(75rem, 100%);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .container {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  width: max(25rem, 80vw);
-  padding-left: max(1rem, 10vw);
-  padding-right: max(1rem, 10vw);
+  min-height: 100vh;
+  min-width: 100vw;
   align-items: center;
 }
 
 .left-links, .right-links {
   display: flex;
-  gap: 4vmin;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .left-links a {
   font-size: 1.5rem;
+  font-weight: 800;
   color: #F9FAF8;
 }
 
@@ -55,15 +61,11 @@ a {
 .hero {
   background-color: #1F2937;
   align-items: center;
-  width: max(25rem, 80vw);
-  padding-left: max(1rem, 10vw);
-  padding-right: max(1rem, 10vw);
-  padding-top: max(0.5rem, 4vh);
-  height: 100%;
+  width: min(75rem, 100%);
 }
 
-.right-hero {
-  justify-content: right;
+.left-hero, .right-hero {
+  padding: 1rem 1rem 0 1rem;
 }
 
 .left-hero h1 {
@@ -86,8 +88,8 @@ a {
   border-radius: 0.4rem;
   font-size: 1.1rem;
   color: #E5E7EB;
-  padding: 0.5rem 2rem;
-  width: 5rem;
+  padding: 0.5rem 3rem;
+  max-width: 12rem;
   justify-content: center;
 }
 
@@ -100,10 +102,10 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  width: max(25rem, 80vw);
-  padding-top: max(0.5rem, 4vh);
-  padding-bottom: max(0.5rem, 4vh);
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: min(75rem, 100%);
 }
 
 .title {
@@ -162,18 +164,26 @@ a {
   color: darkgrey;
 }
 
-.testimonial {
+.testimonial-background {
   background-color: #E5E7EB;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.testimonial {
   display: flex;
   flex-direction: column;
   font-style: italic;
   font-size: 1.7rem;
-  width: max(25rem, 80vw);
-  padding-left: max(1rem, 10vw);
-  padding-right: max(1rem, 10vw);
-  padding-top: max(1rem, 6vh);
-  padding-bottom: max(1rem, 6vh);
+  width: min(75rem, 100%);
   gap: 1rem;
+}
+
+.quote {
+  line-height: 1.5;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .signature {
@@ -182,14 +192,13 @@ a {
   font-style: normal;
   font-weight: 800;
   font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .cta-left {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: center;
-  align-items: center;
 }
 
 .cta-title {
@@ -199,7 +208,6 @@ a {
 
 .cta-right {
   display: flex;
-  flex: 0 0 7.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -218,6 +226,13 @@ a {
 
 .cta-button:hover {
   background-color: #6ea1db;
+}
+
+.footer-background {
+  background-color: #1F2937;
+  width: 100%;
+  position: sticky;
+  top: 100vh;
 }
 
 .footer {
@@ -239,75 +254,90 @@ a {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .left-hero {
     display: flex;
     flex-direction: column;
-    background-color: #1F2937;
-    margin-bottom: 1.5rem;
+    align-items: center;
+    align-content: space-evenly;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .left-hero h1 {
     text-align: center;
   }
-  .left-hero, .right-hero {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    width: max(25rem, 80vw);
-    gap: 4vh;
+  .right-hero {
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
   .call-to-action {
     display: flex;
     flex-direction: column;
     background-color: #3882f6;
     color: #E5E7EB;
-    margin: 6vh 0vmin;
-    padding: 2vh 4vw;
     border-radius: 0.4rem;
+    padding: 1.5rem;
+    margin: 4rem 0.5rem;
   }
-  .cta-left, .cta-title {
-    margin-top: 3vh;
-    margin-left: 2vw;
-    margin-right: 2vw;
+  .cta-left {
+    align-items: center;
+  }
+  .cta-button {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   .main-photo {
     width: 100%;
+    margin-bottom: -0.25rem;
+  }
+  .testimonial {
+    padding: 0;
+  }
+  .quote {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .signature {
+    padding-right: 1.5rem;
   }
 }
 
 @media (min-width: 680px) {
   .hero {
     display: flex;
-    padding-bottom: max(0.5rem, 6vh);
   }
   .left-hero {
-    padding-right: 1.5rem;
-    flex-direction: column;
-    background-color: #1F2937;
-    min-height: 100%;
-  }
-  .left-hero, .right-hero {
     display: flex;
-    flex: 1;
-    margin-bottom: 0;
-    gap: 2vw;
-    height: 100%;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
   }
   .call-to-action {
     display: flex;
     background-color: #3882f6;
     color: #E5E7EB;
-    margin: 6vmin;
-    padding: 3rem;
-    gap: 1.5rem;
-    justify-content: space-evenly;
+    gap: 3rem;
     border-radius: 0.4rem;
-  }
-  .cta-left, .cta-title {
-    margin-top: 0;
+    padding: 3rem 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
   .main-photo {
     width: 100%;
+    margin-bottom: -0.25rem;
+  }
+  .testimonial {
+    padding: 2rem 9rem;
+  }
+  .quote {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .signature {
+    padding-right: 4rem;
   }
 }
